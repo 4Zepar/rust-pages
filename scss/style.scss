@@ -179,7 +179,7 @@ $akcent: #D71E09;
 
         .main-section {
             width: 100%;
-            background-image: url(../images/bg.png);
+            background-image: url(images/bg.png);
             background-size: cover;
             background-position: center;
             display: flex;
@@ -449,7 +449,7 @@ $akcent: #D71E09;
                         .frontnews-image {
                             grid-column: 1;
                             text-align: center;
-                            background-image: url(../images/008a6ac2-5e3b-4d8a-92be-ebadaa6efa2a.webp);
+                            background-image: url(images/008a6ac2-5e3b-4d8a-92be-ebadaa6efa2a.webp);
                             background-position: center;
                             background-size: cover;
                             display: flex;
@@ -550,7 +550,7 @@ $akcent: #D71E09;
 
                         .elem-image {
                             text-align: center;
-                            background-image: url(../images/008a6ac2-5e3b-4d8a-92be-ebadaa6efa2a.webp);
+                            background-image: url(images/008a6ac2-5e3b-4d8a-92be-ebadaa6efa2a.webp);
                             background-position: center;
                             background-size: cover;
                             display: flex;
@@ -689,7 +689,7 @@ $akcent: #D71E09;
                                 gap: calc(var(--index) * .7);
 
                                 .profile-logo {
-                                    background-image: url(../images/profile-photo.jpg);
+                                    background-image: url(images/profile-photo.jpg);
                                     background-position: center;
                                     background-size: 125%;
                                     min-width: calc(var(--index) * 2);
