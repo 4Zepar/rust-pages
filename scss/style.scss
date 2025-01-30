@@ -30,6 +30,7 @@ body {
     background-color: #1E1E20;
     color: white;
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    // font-size: 5rem;
 }
 
 $akcent: #D71E09;
@@ -45,8 +46,9 @@ $akcent: #D71E09;
     align-items: center;
     height: 100vh;
     border-right: calc(var(--index) * .1) solid rgb(39, 39, 39);
-    z-index: 2;
+    z-index: 4;
     grid-column: 1;
+    transition: 1s cubic-bezier(0.98, 0.1, 0.3, 0.9);
 
     .container {
         display: flex;
@@ -59,6 +61,7 @@ $akcent: #D71E09;
             padding: calc(var(--index) * .7) calc(var(--index) * 1);
             gap: calc(var(--index) * .4);
             border-bottom: calc(var(--index) * .1) solid rgb(39, 39, 39);
+            border-top: calc(var(--index) * .1) solid rgb(39, 39, 39);
 
             .logo-image {
                 width: calc(var(--index) * 2.2);
@@ -184,12 +187,72 @@ $akcent: #D71E09;
     height: calc(var(--index) * 2.3);
     z-index: 3;
     display: none;
+    transition: .3s cubic-bezier(0.98, 0.1, 0.3, 0.9);
 
     img {
         width: 100%;
         height: 100%;
         filter: invert(80%);
         pointer-events: none;
+    }
+}
+
+.account-icon {
+    position: absolute;
+    right: calc(var(--index) * 1.8);
+    top: calc(var(--index) * 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(var(--index) * 2);
+    height: calc(var(--index) * 2);
+    z-index: 3;
+    display: none;
+
+    img {
+        width: 100%;
+        height: 100%;
+        filter: invert(80%);
+        pointer-events: none;
+    }
+}
+
+.button-close {
+    position: fixed;
+    left: calc(var(--index) * 1.8);
+    top: calc(var(--index) * 1);
+    scale: 0;
+    transition: 0.8s cubic-bezier(0.98, 0.1, 0.3, 0.9);
+    background-color: #1E1E20;
+    z-index: 4;
+    height: calc(var(--index) * 1.7);
+    width: calc(var(--index) * 1.7);
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    .line {
+        position: relative;
+        width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .line-left, .line-right {
+            background-color: #ffffff;
+            position: absolute;
+            transform: rotate(45deg);
+            height: calc(var(--index) * 0.1);
+            width: 100%;
+            border-radius: 2em;
+        }
+        
+        .line-right {
+            transform: rotate(-45deg);
+        }
     }
 }
 
@@ -1216,9 +1279,16 @@ $akcent: #D71E09;
 @media (max-width: 1025px) {
 
     .sidenav {
-        display: none;
+        transform: translateX(-105%);
+        padding: calc(var(--index) * 3.6) 0 0;
     }
     .menu {
+        display: flex;
+    }
+    .account {
+        display: none;
+    }
+    .account-icon {
         display: flex;
     }
 
@@ -1232,6 +1302,10 @@ $akcent: #D71E09;
 }
 
 @media (max-width: 620px) {
+
+    :root {
+        --index: calc(1.12vw + 1.12vh);
+    }
 
     .footer {
 
@@ -1251,30 +1325,22 @@ $akcent: #D71E09;
     }
 }
 
-// @media (max-width: 425px) {
-//     .footer {
+@media (max-width: 425px) {
+    
+    .footer {
 
-//         .container {
-//             grid-template-columns: repeat(4, min-content);
+        .container {
+            grid-template-columns: repeat(3, min-content);
+            grid-template-rows: repeat(2, min-content);
 
-//             .block:nth-child(4) {
-//                 grid-row: 2;
-//                 padding: 0;
-//                 padding: 0 calc(var(--index) * .7);
+            .block:nth-child(4) {
+                padding: 0;
+                padding: 0 calc(var(--index) * .7);
 
-//                 .links {
-//                     flex-wrap: nowrap;
-//                 }
-//             }
-//             .block:nth-child(5) {
-//                 grid-row: 2;
-//                 padding: 0;
-//                 padding: 0 calc(var(--index) * .7);
-
-//                 .links {
-//                     flex-wrap: wrap;
-//                 }
-//             }
-//         }
-//     }
-// }
+                .links {
+                    flex-wrap: nowrap;
+                }
+            }
+        }
+    }
+}
