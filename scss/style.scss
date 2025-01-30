@@ -150,9 +150,8 @@ $akcent: #D71E09;
     right: calc(var(--index) * 2);
     top: calc(var(--index) * .8);
     z-index: 2;
-    background: linear-gradient(to right, rgb(254, 144, 20), $akcent);
-    padding: calc(var(--index) * .7)  calc(var(--index) * 1);
-    border-radius:  calc(var(--index) * .3);
+    font-weight: 600;
+    font-size: calc(var(--index) * .75);
 }
 
 // ----------------------------------------------------------------------------
@@ -289,8 +288,7 @@ $akcent: #D71E09;
                             }
 
                             &-text {
-                                font-size: calc(var(--index) * .45);
-                                line-height: calc(var(--index) * .8);
+                                font-size: calc(var(--index) * .65);
                                 opacity: 60%;
                                 width: 90%;
                             }
@@ -556,8 +554,8 @@ $akcent: #D71E09;
                                 }
     
                                 .frontnews-info-text {
-                                    font-size: calc(var(--index) * .55);
-                                    width: 85%;
+                                    font-size: calc(var(--index) * .65);
+                                    width: 90%;
                                     opacity: 0.7;
                                     line-height: calc(var(--index) * .9);
                                 }
@@ -652,7 +650,7 @@ $akcent: #D71E09;
                         }
 
                         .elem-text {
-                            font-size: calc(var(--index) * .5);
+                            font-size: calc(var(--index) * .65);
                             opacity: 0.7;
                             line-height: calc(var(--index) * .9);
                             overflow: hidden;
@@ -906,8 +904,8 @@ $akcent: #D71E09;
                         }
 
                         .elem-text {
-                            font-size: calc(var(--index) * .52);
-                            line-height: calc(var(--index) * .8);
+                            font-size: calc(var(--index) * .63);
+                            line-height: calc(var(--index) * 1);
                             opacity: 60%;
                         }
                     }
@@ -957,7 +955,7 @@ $akcent: #D71E09;
                         border-radius: calc(var(--index) * .6);
 
                         .content-text {
-                            font-size: calc(var(--index) * .52);
+                            font-size: calc(var(--index) * .65);
                             line-height: calc(var(--index) * 1.1);
                             opacity: 60%;
 
@@ -970,14 +968,14 @@ $akcent: #D71E09;
 
                                     span {
                                         color: white;
-                                        font-size: calc(var(--index) * .52) ;
+                                        font-size: calc(var(--index) * .65) ;
                                     }
                                 }
                             }
                         }
 
                         .content-title {
-                            font-size: calc(var(--index) * .8);
+                            font-size: calc(var(--index) * .85);
                             font-weight: 600; 
                             padding: calc(var(--index) * .7) 0 0;
                         }

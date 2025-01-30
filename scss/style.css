@@ -132,9 +132,8 @@ body {
   right: calc(var(--index) * 2);
   top: calc(var(--index) * 0.8);
   z-index: 2;
-  background: linear-gradient(to right, rgb(254, 144, 20), #D71E09);
-  padding: calc(var(--index) * 0.7) calc(var(--index) * 1);
-  border-radius: calc(var(--index) * 0.3);
+  font-weight: 600;
+  font-size: calc(var(--index) * 0.75);
 }
 
 .main {
@@ -251,8 +250,7 @@ body {
   font-weight: 600;
 }
 .main .container .advantages .container .advant-cards__elem .elem-description-text {
-  font-size: calc(var(--index) * 0.45);
-  line-height: calc(var(--index) * 0.8);
+  font-size: calc(var(--index) * 0.65);
   opacity: 60%;
   width: 90%;
 }
@@ -468,8 +466,8 @@ body {
   font-weight: 600;
 }
 .main .container .news .container .news-content__frontnews .frontnews-info .container .frontnews-info-text {
-  font-size: calc(var(--index) * 0.55);
-  width: 85%;
+  font-size: calc(var(--index) * 0.65);
+  width: 90%;
   opacity: 0.7;
   line-height: calc(var(--index) * 0.9);
 }
@@ -551,7 +549,7 @@ body {
   font-weight: 600;
 }
 .main .container .news .container .news-items__elem .elem-text {
-  font-size: calc(var(--index) * 0.5);
+  font-size: calc(var(--index) * 0.65);
   opacity: 0.7;
   line-height: calc(var(--index) * 0.9);
   overflow: hidden;
@@ -734,8 +732,8 @@ body {
   font-size: calc(var(--index) * 0.5);
 }
 .main .container .reviews .container .review-cards__elem .elem-text {
-  font-size: calc(var(--index) * 0.52);
-  line-height: calc(var(--index) * 0.8);
+  font-size: calc(var(--index) * 0.63);
+  line-height: calc(var(--index) * 1);
   opacity: 60%;
 }
 @media (max-width: 560px) {
@@ -775,7 +773,7 @@ body {
   border-radius: calc(var(--index) * 0.6);
 }
 .main .container .about .container .about-content__elem .content-text {
-  font-size: calc(var(--index) * 0.52);
+  font-size: calc(var(--index) * 0.65);
   line-height: calc(var(--index) * 1.1);
   opacity: 60%;
 }
@@ -788,10 +786,10 @@ body {
 }
 .main .container .about .container .about-content__elem .content-text ul li span {
   color: white;
-  font-size: calc(var(--index) * 0.52);
+  font-size: calc(var(--index) * 0.65);
 }
 .main .container .about .container .about-content__elem .content-title {
-  font-size: calc(var(--index) * 0.8);
+  font-size: calc(var(--index) * 0.85);
   font-weight: 600;
   padding: calc(var(--index) * 0.7) 0 0;
 }
