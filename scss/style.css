@@ -212,7 +212,7 @@ body {
 }
 .main .container .advantages .container .advant-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: calc(var(--index) * 1.5);
 }
 .main .container .advantages .container .advant-cards__elem {
@@ -225,7 +225,7 @@ body {
 }
 .main .container .advantages .container .advant-cards__elem .elem-icon {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   min-width: calc(var(--index) * 2);
   height: calc(var(--index) * 2);
@@ -519,6 +519,7 @@ body {
 .main .container .news .container .news-items__elem .elem-date {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: calc(var(--index) * 0.5);
 }
 .main .container .news .container .news-items__elem .elem-date .date-icon {

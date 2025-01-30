@@ -246,7 +246,7 @@ $akcent: #D71E09;
 
                 .advant-cards {
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: flex-start;
                     gap: calc(var(--index) * 1.5);
 
                     &__elem {
@@ -259,7 +259,7 @@ $akcent: #D71E09;
 
                         .elem-icon {
                             display: flex;
-                            justify-content: flex-start;
+                            justify-content: center;
                             align-items: center;
                             min-width: calc(var(--index) * 2);
                             height: calc(var(--index) * 2);
@@ -614,6 +614,7 @@ $akcent: #D71E09;
                         .elem-date {
                             display: flex;
                             align-items: center;
+                            justify-content: flex-start;
                             gap: calc(var(--index) * .5);
 
                             .date-icon {
