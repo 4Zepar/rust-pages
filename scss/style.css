@@ -227,6 +227,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   justify-self: flex-start;
   width: calc(var(--index) * 2);
   height: calc(var(--index) * 2);
