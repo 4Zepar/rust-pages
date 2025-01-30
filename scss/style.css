@@ -532,6 +532,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  align-self: center;
   width: calc(var(--index) * 0.8);
   height: calc(var(--index) * 0.8);
 }
