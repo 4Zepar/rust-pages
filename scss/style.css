@@ -342,6 +342,11 @@ body {
 }
 .main .container .tarif .container .tarif-table table tbody .wrap p {
   text-wrap: nowrap;
+  white-space: nowrap;
+  white-space: nowrap;
+  word-wrap: normal;
+  word-break: normal;
+  overflow-wrap: normal;
   color: white;
   text-align: center;
   font-family: var(--mp400);
