@@ -374,7 +374,18 @@ body {
     width: 100%;
   }
   .main .container .advantages .container .advant-cards__elem .elem-description-text {
-    font-size: calc(var(--index) * 0.57);
+    font-size: calc(var(--index) * 0.65);
+  }
+}
+@media (max-width: 425px) {
+  .main .container .advantages .container .advant-cards__elem {
+    width: 100%;
+  }
+  .main .container .advantages .container .advant-cards__elem .elem-description-title {
+    font-size: calc(var(--index) * 0.9);
+  }
+  .main .container .advantages .container .advant-cards__elem .elem-description-text {
+    font-size: calc(var(--index) * 0.8);
   }
 }
 .main .container .tarif {
@@ -466,7 +477,11 @@ body {
 }
 @media (max-width: 425px) {
   .main .container .tarif .container .tarif-title {
-    width: 80%;
+    width: 90%;
+  }
+  .main .container .tarif .container .tarif-title .title-subtitle {
+    font-size: calc(var(--index) * 0.8);
+    line-height: calc(var(--index) * 1);
   }
 }
 .main .container .news {
@@ -715,8 +730,21 @@ body {
   }
 }
 @media (max-width: 425px) {
+  .main .container .news .container .news-content__frontnews .frontnews-info .container .frontnews-info-title {
+    width: 70%;
+  }
+  .main .container .news .container .news-content__frontnews .frontnews-info .container .frontnews-info-text {
+    width: 100%;
+    font-size: calc(var(--index) * 0.8);
+  }
+  .main .container .news .container .news-content__frontnews .frontnews-info .container .frontnews-info-pagination {
+    padding: 0;
+  }
   .main .container .news .container .news-title {
-    width: 80%;
+    width: 90%;
+  }
+  .main .container .news .container .news-title .title-subtitle {
+    font-size: calc(var(--index) * 0.8);
   }
   .main .container .news .container .news-items {
     flex-wrap: wrap;
@@ -725,8 +753,12 @@ body {
   .main .container .news .container .news-items .news-items__elem {
     width: 100%;
   }
+  .main .container .news .container .news-items .news-items__elem .elem-text {
+    font-size: calc(var(--index) * 0.8);
+  }
   .main .container .news .container .news-items .news-items__elem .elem-title {
     width: 60%;
+    font-size: calc(var(--index) * 0.9);
   }
 }
 .main .container .reviews {
@@ -837,6 +869,19 @@ body {
   line-height: calc(var(--index) * 1);
   opacity: 60%;
 }
+@media (max-width: 425px) {
+  .main .container .reviews .container .review-description__title .title-subtitle {
+    font-size: calc(var(--index) * 0.8);
+    width: 80%;
+  }
+  .main .container .reviews .container .review-description__title__button {
+    font-size: calc(var(--index) * 0.8);
+  }
+  .main .container .reviews .container .review-cards__elem .elem-text {
+    font-size: calc(var(--index) * 0.8);
+    line-height: calc(var(--index) * 1.1);
+  }
+}
 @media (max-width: 560px) {
   .main .container .reviews .review-cards {
     flex-wrap: wrap;
@@ -907,6 +952,32 @@ body {
   }
   .main .container .about .container .about-content__elem {
     width: 100%;
+  }
+  .main .container .about .container .about-content__elem .content-text {
+    font-size: calc(var(--index) * 0.8);
+  }
+}
+@media (max-width: 425px) {
+  .main .container .about .container .about-content {
+    flex-direction: column;
+    gap: calc(var(--index) * 2);
+  }
+  .main .container .about .container .about-content__elem {
+    width: 100%;
+  }
+  .main .container .about .container .about-content__elem .content-text {
+    font-size: calc(var(--index) * 0.8);
+  }
+  .main .container .about .container .about-content__elem .content-text ul {
+    padding: 0 0 0 calc(var(--index) * 0.7);
+  }
+  .main .container .about .container .about-content__elem .content-text ul li {
+    color: #D71E09;
+    font-size: calc(var(--index) * 0.7);
+  }
+  .main .container .about .container .about-content__elem .content-text ul li span {
+    color: white;
+    font-size: calc(var(--index) * 0.8);
   }
 }
 
@@ -1094,11 +1165,12 @@ body {
     padding: calc(var(--index) * 3.6) 0 0;
   }
   .sidenav .container .sidenav__logo {
-    padding: calc(var(--index) * 1) calc(var(--index) * 4);
+    padding: calc(var(--index) * 1) calc(var(--index) * 7.3) calc(var(--index) * 1) calc(var(--index) * 0.7);
     gap: calc(var(--index) * 0.4);
+    width: 100%;
   }
   .sidenav .container .sidenav__button {
-    padding: calc(var(--index) * 1);
+    padding: calc(var(--index) * 1) calc(var(--index) * 7.8) calc(var(--index) * 1) calc(var(--index) * 0.2);
     border-bottom: calc(var(--index) * 0.1) solid rgb(39, 39, 39);
     font-size: calc(var(--index) * 0.6);
     display: flex;
@@ -1118,7 +1190,7 @@ body {
   .sidenav .container .sidenav-menu__elem {
     display: flex;
     gap: calc(var(--index) * 0.9);
-    padding: calc(var(--index) * 1) 0 calc(var(--index) * 1) calc(var(--index) * 4.3);
+    padding: calc(var(--index) * 1);
     border-bottom: calc(var(--index) * 0.1) solid rgb(39, 39, 39);
   }
   .sidenav .container .sidenav-menu__elem .elem-icon {
@@ -1137,6 +1209,10 @@ body {
     display: flex;
     align-items: center;
     font-size: calc(var(--index) * 0.55);
+  }
+  .main .container .main-section .title-subtitle {
+    font-size: calc(var(--index) * 0.8);
+    width: 80%;
   }
   .footer .container {
     grid-template-columns: repeat(3, min-content);
