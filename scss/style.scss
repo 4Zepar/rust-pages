@@ -145,6 +145,16 @@ $akcent: #D71E09;
     }
 }
 
+.account {
+    position: absolute;
+    right: calc(var(--index) * 2);
+    top: calc(var(--index) * .8);
+    z-index: 2;
+    background: linear-gradient(to right, rgb(254, 144, 20), $akcent);
+    padding: calc(var(--index) * .7)  calc(var(--index) * 1);
+    border-radius:  calc(var(--index) * .3);
+}
+
 // ----------------------------------------------------------------------------
 
 .main {
@@ -255,7 +265,6 @@ $akcent: #D71E09;
                             height: calc(var(--index) * 2);
                             border-radius: 50%;
                             background: linear-gradient(to right, rgb(254, 144, 20), $akcent);
-                            // padding: calc(var(--index) * 1);
         
                             img {
                                 width: 50%;
@@ -510,9 +519,9 @@ $akcent: #D71E09;
     
                                     .date-icon {
                                         display: flex;
-                                        justify-content: center;
+                                        justify-content: flex-start;
                                         align-items: center;
-                                        min-width: calc(var(--index) * .8);
+                                        width: calc(var(--index) * .8);
                                         height: calc(var(--index) * .8);
                     
                                         img {

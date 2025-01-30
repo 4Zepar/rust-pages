@@ -127,6 +127,16 @@ body {
   font-size: calc(var(--index) * 0.55);
 }
 
+.account {
+  position: absolute;
+  right: calc(var(--index) * 2);
+  top: calc(var(--index) * 0.8);
+  z-index: 2;
+  background: linear-gradient(to right, rgb(254, 144, 20), #D71E09);
+  padding: calc(var(--index) * 0.7) calc(var(--index) * 1);
+  border-radius: calc(var(--index) * 0.3);
+}
+
 .main {
   width: 100%;
   padding: 0 0 0 calc(var(--index) * 11.5);
@@ -428,9 +438,9 @@ body {
 }
 .main .container .news .container .news-content__frontnews .frontnews-info .container .frontnews-info-date .date-icon {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  min-width: calc(var(--index) * 0.8);
+  width: calc(var(--index) * 0.8);
   height: calc(var(--index) * 0.8);
 }
 .main .container .news .container .news-content__frontnews .frontnews-info .container .frontnews-info-date .date-icon img {
