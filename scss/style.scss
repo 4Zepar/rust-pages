@@ -321,6 +321,9 @@ $akcent: #D71E09;
                 }
 
                 @media (max-width: 560px) {
+
+                    width: 85%;
+
                     .title-subtitle {
                         width: 60%;
                     }
@@ -1327,6 +1330,10 @@ $akcent: #D71E09;
 
 @media (max-width: 425px) {
     
+    :root {
+        --index: calc(1.33vw + 1.33vh);
+    }
+
     .footer {
 
         .container {

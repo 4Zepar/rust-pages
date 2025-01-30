@@ -289,6 +289,9 @@ body {
   font-size: calc(var(--index) * 0.65);
 }
 @media (max-width: 560px) {
+  .main .container .main-section__title {
+    width: 85%;
+  }
   .main .container .main-section__title .title-subtitle {
     width: 60%;
   }
@@ -1082,6 +1085,9 @@ body {
   }
 }
 @media (max-width: 425px) {
+  :root {
+    --index: calc(1.33vw + 1.33vh);
+  }
   .footer .container {
     grid-template-columns: repeat(3, min-content);
     grid-template-rows: repeat(2, min-content);
