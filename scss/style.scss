@@ -147,11 +147,50 @@ $akcent: #D71E09;
 
 .account {
     position: absolute;
-    right: calc(var(--index) * 2);
-    top: calc(var(--index) * .8);
-    z-index: 2;
-    font-weight: 600;
+    right: calc(var(--index) * 2.5);
+    top: calc(var(--index) * 1);
+    z-index: 3;
     font-size: calc(var(--index) * .75);
+    display: block;
+    white-space: nowrap;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+    color: rgb(225, 225, 225);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.account::after {
+    content: "⭢";
+    padding: 0 0 0 calc(var(--index) * .3);
+    line-height: calc(var(--index) * 1);
+    position: absolute;
+    transition: all .3s ease-in-out;
+}
+.account:hover::after {
+    color: white;
+    transform: translateX(calc(var(--index) * .6));
+}
+
+.menu {
+    position: absolute;
+    left: calc(var(--index) * 1.8);
+    top: calc(var(--index) * 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(var(--index) * 2.3);
+    height: calc(var(--index) * 2.3);
+    z-index: 3;
+    display: none;
+
+    img {
+        width: 100%;
+        height: 100%;
+        filter: invert(80%);
+        pointer-events: none;
+    }
 }
 
 // ----------------------------------------------------------------------------
@@ -1178,6 +1217,9 @@ $akcent: #D71E09;
 
     .sidenav {
         display: none;
+    }
+    .menu {
+        display: flex;
     }
 
     .main {
