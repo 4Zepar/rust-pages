@@ -820,6 +820,10 @@ body {
   flex-direction: column;
   gap: calc(var(--index) * 0.7);
   padding: calc(var(--index) * 1.5);
+}
+.footer .container .block-title {
+  font-size: calc(var(--index) * 0.65);
+  font-weight: 600;
   display: block;
   white-space: nowrap;
   word-wrap: normal;
@@ -827,10 +831,6 @@ body {
   overflow-wrap: normal;
   -webkit-hyphens: none;
   hyphens: none;
-}
-.footer .container .block-title {
-  font-size: calc(var(--index) * 0.65);
-  font-weight: 600;
 }
 .footer .container .block a {
   font-size: calc(var(--index) * 0.52);

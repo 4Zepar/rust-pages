@@ -1019,18 +1019,18 @@ $akcent: #D71E09;
             flex-direction: column;
             gap: calc(var(--index) * .7);
             padding: calc(var(--index) * 1.5);
-            display: block;
-            white-space: nowrap;
-            word-wrap: normal;
-            word-break: normal;
-            overflow-wrap: normal;
-            -webkit-hyphens: none;
-            -moz-hyphens: none;
-            hyphens: none;
 
             &-title {
                 font-size: calc(var(--index) * .65);
                 font-weight: 600;
+                display: block;
+                white-space: nowrap;
+                word-wrap: normal;
+                word-break: normal;
+                overflow-wrap: normal;
+                -webkit-hyphens: none;
+                -moz-hyphens: none;
+                hyphens: none;
             }
             
             a {
