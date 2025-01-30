@@ -1157,30 +1157,30 @@ $akcent: #D71E09;
     }
 }
 
-@media (max-width: 425px) {
-    .footer {
+// @media (max-width: 425px) {
+//     .footer {
 
-        .container {
-            grid-template-columns: repeat(4, min-content);
+//         .container {
+//             grid-template-columns: repeat(4, min-content);
 
-            .block:nth-child(4) {
-                grid-row: 2;
-                padding: 0;
-                padding: 0 calc(var(--index) * .7);
+//             .block:nth-child(4) {
+//                 grid-row: 2;
+//                 padding: 0;
+//                 padding: 0 calc(var(--index) * .7);
 
-                .links {
-                    flex-wrap: nowrap;
-                }
-            }
-            .block:nth-child(5) {
-                grid-row: 2;
-                padding: 0;
-                padding: 0 calc(var(--index) * .7);
+//                 .links {
+//                     flex-wrap: nowrap;
+//                 }
+//             }
+//             .block:nth-child(5) {
+//                 grid-row: 2;
+//                 padding: 0;
+//                 padding: 0 calc(var(--index) * .7);
 
-                .links {
-                    flex-wrap: wrap;
-                }
-            }
-        }
-    }
-}
+//                 .links {
+//                     flex-wrap: wrap;
+//                 }
+//             }
+//         }
+//     }
+// }
