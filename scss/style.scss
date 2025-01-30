@@ -624,10 +624,11 @@ $akcent: #D71E09;
                             gap: calc(var(--index) * .5);
 
                             .date-icon {
+                                flex-shrink: 0;
                                 display: flex;
                                 justify-content: flex-start;
                                 align-items: center;
-                                min-width: calc(var(--index) * .8);
+                                width: calc(var(--index) * .8);
                                 height: calc(var(--index) * .8);
             
                                 img {
