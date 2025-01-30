@@ -259,7 +259,7 @@ $akcent: #D71E09;
 
                         .elem-icon {
                             display: flex;
-                            justify-content: center;
+                            justify-content: flex-start;
                             align-items: center;
                             min-width: calc(var(--index) * 2);
                             height: calc(var(--index) * 2);
@@ -618,7 +618,7 @@ $akcent: #D71E09;
 
                             .date-icon {
                                 display: flex;
-                                justify-content: center;
+                                justify-content: flex-start;
                                 align-items: center;
                                 min-width: calc(var(--index) * .8);
                                 height: calc(var(--index) * .8);
