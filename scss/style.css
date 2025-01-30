@@ -303,6 +303,7 @@ body {
   width: 100%;
   justify-content: center;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .main .container .tarif .container .tarif-table table {
   width: 100%;
@@ -341,12 +342,12 @@ body {
   border-radius: calc(var(--index) * 0.6);
 }
 .main .container .tarif .container .tarif-table table tbody .wrap p {
-  text-wrap: nowrap;
-  white-space: nowrap;
   white-space: nowrap;
   word-wrap: normal;
   word-break: normal;
   overflow-wrap: normal;
+  -webkit-hyphens: none;
+  hyphens: none;
   color: white;
   text-align: center;
   font-family: var(--mp400);

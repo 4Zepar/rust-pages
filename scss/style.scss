@@ -360,6 +360,7 @@ $akcent: #D71E09;
                     width: 100%;
                     justify-content: center;
                     overflow-x: auto;
+                    -webkit-overflow-scrolling: touch;
 
                     table {
                         width: 100%;
@@ -401,12 +402,14 @@ $akcent: #D71E09;
                                 border-radius: calc(var(--index) * .6);
         
                                 p {
-                                    text-wrap: nowrap;
-                                    white-space: nowrap;
+                                    // text-wrap: nowrap;
                                     white-space: nowrap;
                                     word-wrap: normal;
                                     word-break: normal;
                                     overflow-wrap: normal;
+                                    -webkit-hyphens: none;
+                                    -moz-hyphens: none;
+                                    hyphens: none;
                                     color: white;
                                     text-align: center;
                                     font-family: var(--mp400);
