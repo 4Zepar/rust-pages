@@ -342,6 +342,7 @@ body {
   border-radius: calc(var(--index) * 0.6);
 }
 .main .container .tarif .container .tarif-table table tbody .wrap p {
+  display: block;
   white-space: nowrap;
   word-wrap: normal;
   word-break: normal;
@@ -658,7 +659,13 @@ body {
   -webkit-text-fill-color: transparent;
   font-weight: 600;
   font-size: calc(var(--index) * 0.65);
-  text-wrap: nowrap;
+  display: block;
+  white-space: nowrap;
+  word-wrap: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  -webkit-hyphens: none;
+  hyphens: none;
 }
 .main .container .reviews .container .review-cards {
   display: flex;
@@ -813,6 +820,13 @@ body {
   flex-direction: column;
   gap: calc(var(--index) * 0.7);
   padding: calc(var(--index) * 1.5);
+  display: block;
+  white-space: nowrap;
+  word-wrap: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  -webkit-hyphens: none;
+  hyphens: none;
 }
 .footer .container .block-title {
   font-size: calc(var(--index) * 0.65);
@@ -894,12 +908,25 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: calc(var(--index) * 0.2);
-  text-wrap: nowrap;
+  display: block;
+  white-space: nowrap;
+  word-wrap: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  -webkit-hyphens: none;
+  hyphens: none;
 }
 .footer .container .footer__logo .logo .logo-title .logo-maintitle {
   font-size: calc(var(--index) * 1.1);
   font-weight: 600;
   line-height: calc(var(--index) * 0.85);
+  display: block;
+  white-space: nowrap;
+  word-wrap: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  -webkit-hyphens: none;
+  hyphens: none;
 }
 .footer .container .footer__logo .logo .logo-title .logo-subtitle {
   font-size: calc(var(--index) * 0.45);

@@ -402,7 +402,7 @@ $akcent: #D71E09;
                                 border-radius: calc(var(--index) * .6);
         
                                 p {
-                                    // text-wrap: nowrap;
+                                    display: block;
                                     white-space: nowrap;
                                     word-wrap: normal;
                                     word-break: normal;
@@ -816,7 +816,14 @@ $akcent: #D71E09;
                         -webkit-text-fill-color: transparent;
                         font-weight: 600;
                         font-size: calc(var(--index) * .65);
-                        text-wrap: nowrap;
+                        display: block;
+                        white-space: nowrap;
+                        word-wrap: normal;
+                        word-break: normal;
+                        overflow-wrap: normal;
+                        -webkit-hyphens: none;
+                        -moz-hyphens: none;
+                        hyphens: none;
                     }
                 }
 
@@ -1012,6 +1019,14 @@ $akcent: #D71E09;
             flex-direction: column;
             gap: calc(var(--index) * .7);
             padding: calc(var(--index) * 1.5);
+            display: block;
+            white-space: nowrap;
+            word-wrap: normal;
+            word-break: normal;
+            overflow-wrap: normal;
+            -webkit-hyphens: none;
+            -moz-hyphens: none;
+            hyphens: none;
 
             &-title {
                 font-size: calc(var(--index) * .65);
@@ -1110,12 +1125,27 @@ $akcent: #D71E09;
                 flex-direction: column;
                 justify-content: center;
                 gap: calc(var(--index) * .2);
-                text-wrap: nowrap;
+                display: block;
+                white-space: nowrap;
+                word-wrap: normal;
+                word-break: normal;
+                overflow-wrap: normal;
+                -webkit-hyphens: none;
+                -moz-hyphens: none;
+                hyphens: none;
     
                     .logo-maintitle {
                         font-size: calc(var(--index) * 1.1);
                         font-weight: 600;
                         line-height: calc(var(--index) * .85);
+                        display: block;
+                        white-space: nowrap;
+                        word-wrap: normal;
+                        word-break: normal;
+                        overflow-wrap: normal;
+                        -webkit-hyphens: none;
+                        -moz-hyphens: none;
+                        hyphens: none;
                     }
                     .logo-subtitle {
                         font-size: calc(var(--index) * .45);
